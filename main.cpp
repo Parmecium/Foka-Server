@@ -7,6 +7,8 @@ void showUsage(string name);
 int main(int argc, char *argv[])
 {
     int i;
+    string source, map_name = NULL;
+    int port;
 
     if(argc < 2)
     {
@@ -14,18 +16,18 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    /*
-    for(i = 0; i < argc; i++)
-        cout << "[" << i << "]: " << argv[i] << endl;
-    return 0;
-    */
-
     for(i = 1; i < argc; i++)
     {
         if(strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--help") == 0)
         {
             showUsage(argv[0]);
             return 0;
+        } else if(strcmp(argv[i], "-c") == 0 || strcmp(argv[i], "--compile") == 0)
+        {
+        } else if(strcmp(argv[i], "-o") == 0 || strcmp(argv[i], "--output") == 0)
+        {
+        } else if(strcmp(argv[i], "-p") == 0 || strcmp(argv[i], "--port") == 0)
+        {
         }
     }
 
