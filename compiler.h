@@ -9,8 +9,8 @@ class Compiler
         Compiler(void);
         ~Compiler(void);
 
-        int parse(string path);
-        int compile(string path);
+        int parse(std::string path);
+        int compile(std::string path);
 };
 
 #endif  // _COMPILER_H_
